@@ -2,6 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/obj/Debug
+/obj/
+/bin/
+/install/
+/packages/
 /.vs/config
+*.suo
 /DNNRadTagCloud.csproj.user
+Resources.zip
