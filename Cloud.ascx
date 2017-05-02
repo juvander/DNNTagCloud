@@ -1,3 +1,3 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Cloud.ascx.cs" Inherits="DotNetNuke.Modules.DNNRadTagCloud.Cloud" %>
-<%@ Register TagPrefix="dnnweb" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnnweb" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <dnnweb:DnnTagCloud ID="rtgCloud" runat="server" Width="225px" DataValueField="TermID" DataTextField="TermName" DataWeightField="TotalTermUsage" OnItemDataBound="RtcCloudItemDataBound" />
