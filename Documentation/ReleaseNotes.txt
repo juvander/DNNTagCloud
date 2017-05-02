@@ -1,0 +1,21 @@
+<h3>DotNetNuke Rad Tag Cloud</h3>
+<p class="Contributor">
+	Chris Paterra<br />
+	<a href=http://dnnradtagcloud.codeplex.com>http://dnnradtagcloud.codeplex.com</a><br />
+</p>
+<hr/>
+<div class="License">
+	<p class="Owner">
+		<h3>About DotNetNuke Rad Tag Cloud</h3>
+		<b>Verion 01.01.01 </b><br /><br />
+		<p>
+			Updated for DotNetNuke 6.1.  <br /><br />
+			Changes Since Previous Release:
+			<ul>
+				<li>Updated for DotNetNuke 6.1.0.</li>
+				<li>Url encoded terms in links (in case something like c# is used).</li>
+			</ul>
+		</p>	
+		<br /><br />
+	</p>
+</div>

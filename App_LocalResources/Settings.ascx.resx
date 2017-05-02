@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlphabeticAsc.Text" xml:space="preserve">
+    <value>Alphabetic Ascending</value>
+  </data>
+  <data name="AlphabeticDsc.Text" xml:space="preserve">
+    <value>Alphabetic Descending</value>
+  </data>
+  <data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>Tag Cloud Settings</value>
+  </data>
+  <data name="dnnlblDistribution.Help" xml:space="preserve">
+    <value>Specifies how the font size will be distributed among the items. When set to Linear the font size is distributed linearly and in the case of Logarithmic the items are weighted logarithmically.</value>
+  </data>
+  <data name="dnnlblDistribution.Text" xml:space="preserve">
+    <value>Font Distribution</value>
+  </data>
+  <data name="dnnlblMaxTags.Help" xml:space="preserve">
+    <value>The maximum number of tag results to display in the tag cloud. </value>
+  </data>
+  <data name="dnnlblMaxTags.Text" xml:space="preserve">
+    <value>Maximum Results</value>
+  </data>
+  <data name="dnnlblRenderWeight.Help" xml:space="preserve">
+    <value>Determines if the match cound should be displayed next to the tag. </value>
+  </data>
+  <data name="dnnlblRenderWeight.Text" xml:space="preserve">
+    <value>Display Tag Weight</value>
+  </data>
+  <data name="dnnlblSkin.Help" xml:space="preserve">
+    <value>This allows you to choose from one of Telerik's pre-built skins to set the look and feel of your tag cloud. You can view samples &lt;a href="http://demos.telerik.com/aspnet-ajax/tagcloud/examples/default/defaultcs.aspx"&gt;here&lt;/a&gt;. </value>
+  </data>
+  <data name="dnnlblSkin.Text" xml:space="preserve">
+    <value>Cloud Skin</value>
+  </data>
+  <data name="dnnlblSort.Help" xml:space="preserve">
+    <value>Typically, tag clouds are not sorted. You can, however, use this setting to sort your cloud based on match count or the tag word itself (alphabetically). </value>
+  </data>
+  <data name="dnnlblSort.Text" xml:space="preserve">
+    <value>Tag Sorting</value>
+  </data>
+  <data name="Linear.Text" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="Logarithmic.Text" xml:space="preserve">
+    <value>Logarithmic</value>
+  </data>
+  <data name="NotSorted.Text" xml:space="preserve">
+    <value>Not Sorted</value>
+  </data>
+  <data name="WeightedAsc.Text" xml:space="preserve">
+    <value>Match Count Ascending</value>
+  </data>
+  <data name="WeightedDsc.Text" xml:space="preserve">
+    <value>Match Count Descending</value>
+  </data>
+  <data name="dnnlblFontRange.Help" xml:space="preserve">
+    <value>Determines the minimum and maximum font sizes used for the lowest and highest weighted tag results displayed (in pixels). </value>
+  </data>
+  <data name="dnnlblFontRange.Text" xml:space="preserve">
+    <value>Font Size Range</value>
+  </data>
+  <data name="dnnlblMaxColor.Help" xml:space="preserve">
+    <value>The base font color for tags with the highest weight.</value>
+  </data>
+  <data name="dnnlblMaxColor.Text" xml:space="preserve">
+    <value>Maximum Font Color</value>
+  </data>
+  <data name="dnnlblMinColor.Help" xml:space="preserve">
+    <value>The base font color of tags with the lowest weight. </value>
+  </data>
+  <data name="dnnlblMinColor.Text" xml:space="preserve">
+    <value>Mininum Font Color</value>
+  </data>
+  <data name="dnnlblContentType.Help" xml:space="preserve">
+    <value>The content filter allows you to limit the tags displayed to a specific content type, page or all tags used in a single site.</value>
+  </data>
+  <data name="dnnlblContentType.Text" xml:space="preserve">
+    <value>Content Filter</value>
+  </data>
+  <data name="dnnlblMinWeight.Help" xml:space="preserve">
+    <value>The minimum number of times a tag must be used in order to be displayed in the tag cloud results. </value>
+  </data>
+  <data name="dnnlblMinWeight.Text" xml:space="preserve">
+    <value>Minimum Occurrence</value>
+  </data>
+  <data name="dnnlblWidth.Help" xml:space="preserve">
+    <value>The width (in pixels) the tag cloud should occupy. </value>
+  </data>
+  <data name="dnnlblWidth.Text" xml:space="preserve">
+    <value>Cloud Width</value>
+  </data>
+  <data name="NoneSpecified.Text" xml:space="preserve">
+    <value>No Filter (All Site Tags)</value>
+  </data>
+  <data name="tabAdvanced.Text" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="TabAppearance.Text" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="TabGeneral.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="AdvancedToolTip.Text" xml:space="preserve">
+    <value>&lt;h4&gt;Advanced&lt;/h4&gt;&lt;p&gt;This allows advanced settings to be configured.&lt;/p&gt;&lt;h5&gt;Font Distribution:&lt;/h5&gt;&lt;p&gt;Specifies how the font size will be distributed among items.&lt;/p&gt;&lt;h5&gt;Font Size Range:&lt;/h5&gt;&lt;p&gt;This allows you to specify the minimum and maximum font sizes applied to the tags, in pixels.&lt;/p&gt;&lt;h5&gt;Minimum Tag Font Color:&lt;/h5&gt;&lt;p&gt;This allows you to override the text color applied for the tag with the lowest match count.&lt;br /&gt;&lt;i&gt;Note: This will be blended with the maximum tag font color for match counts that fall in between the two.&lt;/i&gt;&lt;/p&gt;&lt;h5&gt;Maximum Tag Font Color:&lt;/h5&gt;&lt;p&gt;This allows you to override the text color applied for the tag with the highest match count.&lt;br /&gt;&lt;i&gt;Note: This will be blended with the minimum tag font color for match counts that fall in between the two.&lt;/i&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="AppearanceToolTip.Text" xml:space="preserve">
+    <value>&lt;h4&gt;Appearance&lt;/h4&gt;&lt;p&gt;This section is used to control the basics of how the tag cloud appears to end users.&lt;/p&gt;&lt;h5&gt;Cloud Skin:&lt;/h5&gt;&lt;p&gt;Choose from one of 14 available designs to control how tags look in the tag cloud.&lt;br /&gt;&lt;i&gt;Note: You must update the module settings for this to take effect.&lt;/i&gt;&lt;/p&gt;&lt;h5&gt;Cloud Width:&lt;/h5&gt;&lt;p&gt;Specifies the width of the tag cloud, in pixels.&lt;/p&gt;&lt;h5&gt;Display Tag Match Count:&lt;/h5&gt;&lt;p&gt;Specifies if the match count should be displayed next to the tag.&lt;br /&gt;&lt;i&gt;Example: USA (309) when set to yes; USA when set to no.&lt;/i&gt;&lt;/p&gt;&lt;h5&gt;Minimum Tag Occurrence:&lt;/h5&gt;&lt;p&gt;Specifies the minimum number of times the tag must have been used (ie. Match Count) in order to be displayed.&lt;/p&gt;&lt;h5&gt;Maximum Tag Results:&lt;/h5&gt;&lt;p&gt;The total number of tags to display in the tag cloud.&lt;/p&gt;</value>
+  </data>
+  <data name="Citation.Text" xml:space="preserve">
+    <value>** This demo only contains 20 tags and is a fixed width.</value>
+  </data>
+  <data name="CurrentTab.Text" xml:space="preserve">
+    <value>Current Page (Only)</value>
+  </data>
+  <data name="GeneralToolTip.Text" xml:space="preserve">
+    <value>&lt;h4&gt;General&lt;/h4&gt;&lt;p&gt;This section is used to control how the tags are populated and the order they should be displayed in.&lt;/p&gt;&lt;h5&gt;Content Filter:&lt;/h5&gt;&lt;p&gt;This determines what tags are retrieved by the tag cloud module. Your options are:&lt;ul&gt;&lt;li&gt;&lt;b&gt;No Filter:&lt;/b&gt; All tags from the site will be retrieved.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Current Page:&lt;/b&gt; Tags associated with the current page will be retrieved.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Others:&lt;/b&gt; The other options allow you to retrieve tags associated with the specified Content Type. &lt;i&gt;(Example: Page = Pages on the site)&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;h5&gt;Tag Sorting:&lt;/h5&gt;&lt;p&gt;This determins the order in which the tags will be sorted within the Tag Cloud. Your options are:&lt;ul&gt;&lt;li&gt;&lt;b&gt;Not Sorted:&lt;/b&gt; No sorting is applied.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Alphabetic:&lt;/b&gt; Sorted by tag name, ascending or descending.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Match Count:&lt;/b&gt; Sorted by the number of times a tag was used.&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="valMinWeightRequired.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Min tag occurrence is required!</value>
+  </data>
+  <data name="valWidthRequired.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Cloud width is required!</value>
+  </data>
+</root>

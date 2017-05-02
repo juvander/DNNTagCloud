@@ -1,0 +1,18 @@
+﻿
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}RTC_Tags_GetByTab') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}RTC_Tags_GetByTab
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}RTC_Tags_GetByContentType') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}RTC_Tags_GetByContentType
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}RTC_Tags_Get') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}RTC_Tags_Get
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}vw_RTC_Terms') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {databaseOwner}{objectQualifier}vw_RTC_Terms
+GO
+
+

@@ -1,0 +1,102 @@
+﻿
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}RTC_Tags_GetByTab') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}RTC_Tags_GetByTab
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}RTC_Tags_GetByContentType') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}RTC_Tags_GetByContentType
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}RTC_Tags_Get') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}RTC_Tags_Get
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}vw_RTC_Terms') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {databaseOwner}{objectQualifier}vw_RTC_Terms
+GO
+
+CREATE VIEW {databaseOwner}[{objectQualifier}vw_RTC_Terms]
+AS
+	SELECT   TT.TermID,
+			   TT.Name AS TermName,
+			   TT.ParentTermID,
+			   TT.CreatedOnDate,
+			   TV.Name AS VocabularyName,
+			   TV.VocabularyID,
+			   CI.TabID,
+			   CI.ModuleID,
+			   CI.ContentTypeID,
+			   T.PortalID
+		FROM    {databaseOwner}{objectQualifier}Taxonomy_Vocabularies AS TV
+			   INNER JOIN {databaseOwner}{objectQualifier}Taxonomy_Terms AS TT ON TV.VocabularyID = TT.VocabularyID
+			   INNER JOIN {databaseOwner}{objectQualifier}ContentItems_Tags AS CIT ON TT.TermID = CIT.TermID
+			   INNER JOIN {databaseOwner}{objectQualifier}ContentItems AS CI ON CIT.ContentItemID = CI.ContentItemID
+			   INNER JOIN {databaseOwner}{objectQualifier}Tabs AS T ON CI.TabID = T.TabID
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}RTC_Tags_Get] @PortalID INT
+AS 
+	SELECT TOP 100
+			TermID,
+			TermName,
+			ParentTermID,
+			( SELECT    COUNT(TermID)
+			  FROM      {databaseOwner}{objectQualifier}vw_RTC_Terms
+			  WHERE     TermID = VRT.TermID
+						AND PortalID = @PortalID
+			) AS TotalTermUsage
+	FROM    {databaseOwner}{objectQualifier}vw_RTC_Terms AS VRT
+	WHERE   PortalID = @PortalID
+			AND VocabularyName = 'Tags'
+	GROUP BY TermID,
+			TermName,
+			ParentTermID         
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}RTC_Tags_GetByContentType] 
+	@PortalID INT,
+	@ContentTypeID INT
+AS 
+	SELECT TOP 100
+			TermID,
+			TermName,
+			ParentTermID,
+			( SELECT    COUNT(TermID)
+			  FROM      {databaseOwner}{objectQualifier}vw_RTC_Terms
+			  WHERE     TermID = VRT.TermID
+						AND ContentTypeID = @ContentTypeID
+						AND PortalID = @PortalID
+			) AS TotalTermUsage
+	FROM    {databaseOwner}{objectQualifier}vw_RTC_Terms AS VRT
+	WHERE   PortalID = @PortalID
+			AND VocabularyName = 'Tags'
+			AND ContentTypeID = @ContentTypeID
+	GROUP BY TermID,
+			TermName,
+			ParentTermID  
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}RTC_Tags_GetByTab]
+	@PortalID INT,
+	@TabID INT
+AS 
+	SELECT TOP 100
+			TermID,
+			TermName,
+			ParentTermID,
+			( SELECT    COUNT(TermID)
+			  FROM      {databaseOwner}{objectQualifier}vw_RTC_Terms
+			  WHERE     TermID = VRT.TermID
+						AND TabID = @TabID
+						AND PortalID = @PortalID
+			) AS TotalTermUsage
+	FROM    {databaseOwner}{objectQualifier}vw_RTC_Terms AS VRT
+	WHERE   PortalID = @PortalID
+			AND VocabularyName = 'Tags'
+			AND TabID = @TabID
+	GROUP BY TermID,
+			TermName,
+			ParentTermID
+GO
+
+

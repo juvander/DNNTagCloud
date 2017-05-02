@@ -1,0 +1,102 @@
+<dotnetnuke type="Package" version="5.0">
+    <packages>
+        <package name="DNN Rad Tag Cloud" type="Module" version="01.01.01">
+            <friendlyname>DNN Rad Tag Cloud</friendlyname>
+            <description>A module that displays a tag cloud which is associated with the core's taxonomy implementation.</description>
+            <iconFile>~/DesktopModules/DNNRadTagCloud/images/DnnRadTagCloud.png</iconFile>
+            <owner>
+                <name>Chris Paterra</name>
+                <organization>DotNetNuke</organization>
+                <url>www.dotnetnuke.com</url>
+                <email>chris.paterra@dotnetnuke.com</email>
+            </owner>
+            <license src="License.txt"></license>
+            <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+            <dependencies>
+                <dependency type="CoreVersion">06.01.00</dependency>
+            </dependencies>
+            <components>
+                <component type="Script">
+                    <scripts>
+                        <basePath>DesktopModules\DNNRadTagCloud\Providers\Data\SqlDataProvider</basePath>
+                        <script type="Install">
+                            <name>01.00.00.SqlDataProvider</name>
+                            <version>01.00.00</version>
+                        </script>
+                        <script type="UnInstall">
+                            <name>Uninstall.SqlDataProvider</name>
+                            <version>01.01.01</version>
+                        </script>
+                    </scripts>
+                </component>
+                <component type="Module">
+                    <desktopModule>
+                        <moduleName>DNNRadTagCloud</moduleName>
+                        <foldername>DNNRadTagCloud</foldername>
+                        <businessControllerClass />
+                        <supportedFeatures />
+                        <moduleDefinitions>
+                            <moduleDefinition>
+                                <friendlyName>Tag Cloud</friendlyName>
+                                <defaultCacheTime>-1</defaultCacheTime>
+                                <moduleControls>
+                                    <moduleControl>
+                                        <controlKey />
+                                        <controlSrc>DesktopModules/DNNRadTagCloud/Cloud.ascx</controlSrc>
+                                        <supportsPartialRendering>False</supportsPartialRendering>
+                                        <iconFile />
+                                        <helpUrl />
+                                        <supportsPopUps>False</supportsPopUps>
+                                        <controlTitle />
+                                        <controlType>View</controlType>
+                                    </moduleControl>
+                                    <moduleControl>
+                                        <controlKey>Settings</controlKey>
+                                        <controlSrc>DesktopModules/DNNRadTagCloud/Settings.ascx</controlSrc>
+                                        <supportsPartialRendering>True</supportsPartialRendering>
+                                        <iconFile />
+                                        <helpUrl />
+                                        <supportsPopUps>True</supportsPopUps>
+                                        <controlTitle />
+                                        <controlType>Edit</controlType>
+                                    </moduleControl>
+                                </moduleControls>
+                                <permissions />
+                            </moduleDefinition>
+                        </moduleDefinitions>
+                    </desktopModule>
+                </component>
+                <component type="Assembly">
+                    <assemblies>
+                        <assembly>
+                            <name>DotNetNuke.Modules.DNNRadTagCloud.dll</name>
+                            <sourceFileName>DotNetNuke.Modules.DNNRadTagCloud.dll</sourceFileName>
+                            <version>01.01.01</version>
+                        </assembly>
+                    </assemblies>
+                </component>
+                <component type="File">
+                    <files>
+                        <basePath>DesktopModules\DNNRadTagCloud\Documentation</basePath>
+                        <file>
+                            <name>License.txt</name>
+                        </file>
+                        <file>
+                            <name>ReleaseNotes.txt</name>
+                        </file>
+                    </files>
+                </component>
+                <component type="ResourceFile">
+                    <resourceFiles>
+                        <basePath>DesktopModules\DNNRadTagCloud</basePath>
+                        <resourceFile>
+                            <name>Resources.zip</name>
+                            <sourceFileName>Resources.zip</sourceFileName>
+                        </resourceFile>
+                    </resourceFiles>
+                </component>
+                <component type="Cleanup" version="01.01.00" fileName="01.01.00.txt" />
+            </components>
+        </package>
+    </packages>
+</dotnetnuke>

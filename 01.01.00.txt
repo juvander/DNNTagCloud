@@ -1,0 +1,7 @@
+DesktopModules\DNNRadTagCloud\Components\Providers\Data\01.00.00.SqlDataProvider
+DesktopModules\DNNRadTagCloud\Components\Providers\Data\IDataProvider.cs
+DesktopModules\DNNRadTagCloud\Components\Providers\Data\SqlDataProvider.cs
+DesktopModules\DNNRadTagCloud\Components\Providers\Data\Uninstall.SqlDataProvider
+DesktopModules\DNNRadTagCloud\Components\Providers\Data
+DesktopModules\DNNRadTagCloud\Components\Providers
+Install\Module\DNNRadTagCloud_01.00.01_Install.resources

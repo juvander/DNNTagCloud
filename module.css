@@ -1,0 +1,5 @@
+
+.dnnTagCloudSettings { width: 862px;}
+.dnnTagCloudSettings .dnnSettingsLeft { float: left; width: 520px; padding-top: 4px; min-height: 350px; }
+.dnnTagCloudSettings .dnnSettingsRight { float: right; width: 350px; padding-top:24px; min-height: 350px}
+.dnnSettingsRight .dnnSettingsCitation { font-size: 10px; font-style: italic;}
